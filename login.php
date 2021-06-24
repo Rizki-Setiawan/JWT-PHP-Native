@@ -68,3 +68,4 @@ $refresh_token = JWT::encode($payload, $_ENV['REFRESH_TOKEN_SECRET']);
 
 
 setcookie('refreshToken', $refresh_token, $payload['exp'], '', '', false, true);
+?>
